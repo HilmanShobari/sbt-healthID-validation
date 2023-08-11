@@ -60,7 +60,7 @@ const ContentPage = () => {
             <>
               {hasNft === true ? (
                 <>
-                  <h1>Hammersonic Festival 2023</h1>
+                  <h1>Jakarta Coldplay 2023</h1>
                   <img src="https://i.gifer.com/7efs.gif" width={400} height={300} alt="success" />
                   {/* <img src="https://i.gifer.com/7efs.gif" width={400} height={400} alt="success" /> */}
                   <h1>Category Ticket: {nftCategory}</h1>
@@ -68,7 +68,7 @@ const ContentPage = () => {
                 </>
               ) : hasNft === false ? (
                 <>
-                  <h1>Hammersonic Festival 2023</h1>
+                  <h1>Jakarta Coldplay 2023</h1>
                   <img src="failed.gif" width={400} height={400} alt="failed" />
                   {/* <img src="https://cliply.co/wp-content/uploads/2021/07/372107370_CROSS_MARK_400px.gif" width={400} height={400} alt="failed" /> */}
                   <h1>Proses Checkin Gagal 😢</h1>
