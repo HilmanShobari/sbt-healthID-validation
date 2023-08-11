@@ -5,6 +5,7 @@ const nextConfig = {
     INFURA_ID: process.env.INFURA_ID,
     CONTRACT_ADDRESS: process.env.CONTRACT_ADDRESS,
     QUICK_NODE_URI: process.env.QUICK_NODE_URI,
+    POLYGON_MUMBAI_RPC: process.env.POLYGON_MUMBAI_RPC
   },
 };
 
