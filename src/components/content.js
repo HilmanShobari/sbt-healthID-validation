@@ -63,7 +63,7 @@ const ContentPage = () => {
                   <h1>Jakarta Coldplay 2023</h1>
                   <img src="https://i.gifer.com/7efs.gif" width={400} height={300} alt="success" />
                   {/* <img src="https://i.gifer.com/7efs.gif" width={400} height={400} alt="success" /> */}
-                  <h1>Category Ticket: {nftCategory}</h1>
+                  <h1>Kategori Tiket: {nftCategory}</h1>
                   <h1>Proses Checkin Berhasil 👍</h1>
                 </>
               ) : hasNft === false ? (
