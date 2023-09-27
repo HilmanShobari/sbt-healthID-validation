@@ -7,8 +7,8 @@ const Content = (props) => {
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const apiUrl = 'http://localhost:3351/api/ids/check';
-  const apiKey = 'secret';
+  const apiUrl = 'https://dev-e-wallet-api.qoincrypto.id/ids/check';
+  const apiKey = 'Q97XCzBMH7xgqP7fLnK8kCYled';
 
   const handleResult = async (result) => {
     if (loading == true) return;
