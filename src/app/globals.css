@@ -73,6 +73,11 @@ a {
   }
 }
 
+.qr-reader {
+  width: 40%;
+}
+
+
 iframe {
   display: none;
 }
