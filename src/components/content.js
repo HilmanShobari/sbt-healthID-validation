@@ -42,7 +42,7 @@ const Content = (props) => {
     if (!!message) {
       setTimeout(() => {
         setMessage('');
-      }, 20000);
+      }, 10000);
     }
   }, [message]);
 
