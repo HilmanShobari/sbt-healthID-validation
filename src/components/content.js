@@ -12,7 +12,6 @@ const Content = (props) => {
      const apiKey = 'Q97XCzBMH7xgqP7fLnK8kCYled';
 
      const handleResult = async (result) => {
-          console.log('result', result);
           if (loading == true) return;
           try {
                setLoading(true);
@@ -25,7 +24,6 @@ const Content = (props) => {
                          },
                     }
                );
-               console.log('res ', res);
                if (res.data?.status_code === 200) {
                     setStatus(true);
                } else {
