@@ -12,7 +12,7 @@ const Content = (props) => {
      const apiKey = 'Q97XCzBMH7xgqP7fLnK8kCYled';
 
      const handleResult = async (result) => {
-          console.log("result", result);
+          console.log('result', result);
           if (loading == true) return;
           try {
                setLoading(true);
@@ -66,22 +66,25 @@ const Content = (props) => {
                ) : message ? (
                     status === true ? (
                          <>
-                              <img src="https://i.gifer.com/7efs.gif" width={400} height={300} alt="status" />
-                              <h1>{message}</h1>
-                              <br />
-                              {/* <h2>Data:</h2> */}
-                              <ul>
-                                   <li>Nama: {data.name}</li>
-                                   <li>NIK: {data.NIK}</li>
-                                   <li>Tanggal Lahir: {data.dateOfBirth}</li>
-                                   <li>Nama Rumah Sakit: {data.hospitalName}</li>
-                                   <li>Alamat Rumah Sakit: {data.hospitalAddress}</li>
-                              </ul>
+                              <div>
+                                   <img src="https://i.gifer.com/7efs.gif" width={400} height={300} alt="status" />
+                                   <h1>{message}</h1>
+                                   <br />
+                                   <ul>
+                                        <li>Nama: {data.name}</li>
+                                        <li>NIK: {data.NIK}</li>
+                                        <li>Tanggal Lahir: {data.dateOfBirth}</li>
+                                        <li>Nama Rumah Sakit: {data.hospitalName}</li>
+                                        <li>Alamat Rumah Sakit: {data.hospitalAddress}</li>
+                                   </ul>
+                              </div>
                          </>
                     ) : (
                          <>
-                              <img src="failed.gif" width={300} height={300} alt="failed" />
-                              <h1>{message}</h1>
+                              <div>
+                                   <img src="failed.gif" width={300} height={300} alt="failed" />
+                                   <h1>{message}</h1>
+                              </div>
                          </>
                     )
                ) : (
