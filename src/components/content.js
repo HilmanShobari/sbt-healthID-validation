@@ -51,47 +51,33 @@ const Content = (props) => {
      }, [message]);
 
      return (
-          <div
-               style={{
-                    width: '100%',
-                    height: '100vh',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    color: 'black',
-               }}
-          >
+          <section className="App-section">
                {loading ? (
                     <div>Loading...</div>
                ) : message ? (
                     status === true ? (
-                         <>
-                              <div>
-                                   <img src="https://i.gifer.com/7efs.gif" width={400} height={300} alt="status" />
-                                   <h1>{message}</h1>
-                                   <br />
-                                   <ul>
-                                        <li>Nama: {data.name}</li>
-                                        <li>NIK: {data.NIK}</li>
-                                        <li>Tanggal Lahir: {data.dateOfBirth}</li>
-                                        <li>Nama Rumah Sakit: {data.hospitalName}</li>
-                                        <li>Alamat Rumah Sakit: {data.hospitalAddress}</li>
-                                   </ul>
+                         <div className='success'>
+                              <img src="https://i.gifer.com/7efs.gif" width={400} height={300} alt="status" />
+                              <h1>{message}</h1>
+                              <br />
+                              <div className="data">
+                                   <p> Nama: {data.name}</p>
+                                   <p>NIK: {data.NIK}</p>
+                                   <p> Tanggal Lahir: {data.dateOfBirth}</p>
+                                   <p>Nama Rumah Sakit: {data.hospitalName}</p>
+                                   <p> Alamat Rumah Sakit: {data.hospitalAddress}</p>
                               </div>
-                         </>
+                         </div>
                     ) : (
-                         <>
-                              <div>
-                                   <img src="failed.gif" width={300} height={300} alt="failed" />
-                                   <h1>{message}</h1>
-                              </div>
-                         </>
+                         <div className='failed'>
+                              <img src="failed.gif" width={300} height={300} alt="failed" />
+                              <h1>{message}</h1>
+                         </div>
                     )
                ) : (
-                    <>
+                    <div className="qr-reader">
                          <h1>Scan Qr Code Anda</h1>
-                         <div className="qr-reader">
+                         <div>
                               <QrReader
                                    onResult={(result) => {
                                         if (!!result) {
@@ -100,9 +86,9 @@ const Content = (props) => {
                                    }}
                               />
                          </div>
-                    </>
+                    </div>
                )}
-          </div>
+          </section>
      );
 };
 
