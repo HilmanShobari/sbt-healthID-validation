@@ -59,6 +59,7 @@ const Content = (props) => {
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center',
+                    color: 'black',
                }}
           >
                {loading ? (
