@@ -59,7 +59,7 @@ const Content = (props) => {
                               <h1>{message}</h1>
                               <br />
                               <div className="data">
-                                   <img src={data.photo} width={100} />
+                                   <img src={data.checkPhoto} width={100} />
                                    <p>Nama: {data.name}</p>
                                    <p>NIK: {data.NIK}</p>
                                    <p>Tanggal Lahir: {data.dateOfBirth}</p>
