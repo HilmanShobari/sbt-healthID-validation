@@ -54,21 +54,23 @@ const Content = (props) => {
                     <div>Loading...</div>
                ) : message ? (
                     status === true ? (
-                         <div className='success'>
-                              <img src="https://i.gifer.com/7efs.gif" width={400} height={300} alt="status" />
+                         <div className="success">
+                              <img src="https://i.gifer.com/7efs.gif" width={300} height={200} alt="status" />
                               <h1>{message}</h1>
                               <br />
                               <div className="data">
-                                   <p> Nama: {data.name}</p>
+                                   <img src={data.photo} width={100} />
+                                   <p>Nama: {data.name}</p>
                                    <p>NIK: {data.NIK}</p>
-                                   <p> Tanggal Lahir: {data.dateOfBirth}</p>
+                                   <p>Tanggal Lahir: {data.dateOfBirth}</p>
+                                   <p></p>
                                    <p>Nama Rumah Sakit: {data.hospitalName}</p>
-                                   <p> Alamat Rumah Sakit: {data.hospitalAddress}</p>
+                                   <p>Alamat Rumah Sakit: {data.hospitalAddress}</p>
                               </div>
                          </div>
                     ) : (
-                         <div className='failed'>
-                              <img src="failed.gif" width={300} height={300} alt="failed" />
+                         <div className="failed">
+                              <img src="failed.gif" width={200} height={200} alt="failed" />
                               <h1>{message}</h1>
                          </div>
                     )

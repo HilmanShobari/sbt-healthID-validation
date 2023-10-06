@@ -74,16 +74,16 @@ body {
 }
 
 .App-section > .success > h1 {
-     font-size: 50px;
+     font-size: 40px;
 }
 
 .App-section > .failed > h1 {
-     font-size: 50px;
+     font-size: 40px;
 }
 
 .App-section > .success > .data {
      line-height: 1.6;
-     font-size: 25px;
+     font-size: 20px;
 }
 
 a {
